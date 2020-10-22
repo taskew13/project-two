@@ -10,3 +10,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  font-family: 'Petrona', 'Hoefler Text', Georgia, 'Times New Roman', Times, Roman, serif;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 25px 12.5px 12.5px 25px; /* TRBL */
+}
