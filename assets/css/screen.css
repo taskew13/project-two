@@ -16,6 +16,12 @@ html {
   font-size: 20px;
   line-height: 25px;
   padding: 25px 12.5px 12.5px 25px; /* TRBL */
-  background: #311
-  color: #666
+  background: #311;
+  color: #666;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	border: 1px solid #EEE;
 }
