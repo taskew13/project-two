@@ -17,7 +17,7 @@ html {
   line-height: 25px;
   padding: 25px 12.5px 12.5px 25px; /* TRBL */
   background: #e3e0cc;
-  color: #222;
+  color: #222;  /* Work on Typographic Grid and look at instructions again */
 }
 img {
 	display: block;
@@ -40,9 +40,32 @@ p {
   display: block;
   text-decoration: none;
   background: #c5d5c5;
-  color: #222; /*Add Padding? */
+  color: #222;
+  padding: 12.5px;
 }
 
 .nav a:hover {
   background: #9fa9a3;
+}
+
+/* State */
+
+@media screen and (min-width: 330px) {
+  .nav::after {
+    content: "";
+    display: block;
+    clear: both;
+    float: none;
+  }
+  .nav li {
+    float: left;
+    text-align: center;
+    width: 33.3333333333%;
+  }
+  .nav a {
+    margin-right: 8px;
+  }
+  .nav li:last-child a {
+    margin-right: 0;
+  }
 }
