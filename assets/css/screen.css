@@ -25,3 +25,14 @@ img {
 	max-width: 100%;
 	border: 1px solid #EEE;
 }
+
+h1,
+h2
+figcaption,
+nav,
+p {
+  padding: 8px;
+}
+.nav a {
+  text-decoration: none;
+}
