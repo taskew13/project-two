@@ -16,23 +16,33 @@ html {
   font-size: 20px;
   line-height: 25px;
   padding: 25px 12.5px 12.5px 25px; /* TRBL */
-  background: #F5FFFA;
+  background: #e3e0cc;
   color: #222;
 }
-
 img {
 	display: block;
 	max-width: 100%;
-	border: 1px solid #F5FFFA;
+	border: 1px solid #e3e0cc;
 }
-
 h1,
-h2
+h2,
 figcaption,
 nav,
 p {
   padding: 8px;
 }
+
+/* Modular */
+.nav li {
+  padding-bottom: 8px;
+}
 .nav a {
+  display: block;
   text-decoration: none;
+  background: #c5d5c5;
+  color: #222; /*Add Padding? */
+}
+
+.nav a:hover {
+  background: #9fa9a3;
 }
