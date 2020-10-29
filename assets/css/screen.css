@@ -20,6 +20,24 @@ html {
   background: #e3e0cc;
   color: #222;  /* Work on Typographic Grid and look at instructions again */
 }
+
+@supports (display: grid) {
+  html {padding: 24px 0;}
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(24px,1fr) minmax(min-content,45ch) minmax(24px,1fr)
+}
+
+header,
+footer,
+main,
+nav,
+section {
+  grid-column: 2 / 3;
+}
+
 img {
 	display: block;
 	max-width: 100%;
