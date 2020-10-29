@@ -11,6 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* Baseline grid: 24 px, Base font-size: 18px */
 html {
   font-family: 'Petrona', 'Hoefler Text', Georgia, 'Times New Roman', Times, Roman, serif;
   font-size: 18px;
@@ -52,7 +53,7 @@ p {
 /* State */
 
 @media screen and (min-width: 330px) {
-  .nav::after {
+/*  .nav::after {
     content: "";
     display: block;
     clear: both;
@@ -67,6 +68,17 @@ p {
     margin-right: 8px;
   }
   .nav li:last-child a {
+    margin-right: 0;
+  } */
+  .nav {
+    display: flex;
+  }
+  .nav li {
+    flex: 1 1 auto;
+    text-align: center;
+    margin-right: 12px;
+  }
+  .nav li:last-child {
     margin-right: 0;
   }
 }
