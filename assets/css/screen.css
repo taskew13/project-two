@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500;0,700;1,500&display=swap');
-@import url('//basehold.it/25');
+@import url('//basehold.it/24');
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -13,9 +13,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family: 'Petrona', 'Hoefler Text', Georgia, 'Times New Roman', Times, Roman, serif;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 25px 12.5px 12.5px 25px; /* TRBL */
+  font-size: 18px;
+  line-height: 24px;
+  padding: 24px;
   background: #e3e0cc;
   color: #222;  /* Work on Typographic Grid and look at instructions again */
 }
@@ -23,25 +23,26 @@ img {
 	display: block;
 	max-width: 100%;
 	border: 1px solid #e3e0cc;
+  box-sizing: border-box;
 }
 h1,
 h2,
 figcaption,
 nav,
 p {
-  padding: 8px;
+  padding-bottom: 24px;
 }
 
 /* Modular */
 .nav li {
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 .nav a {
   display: block;
   text-decoration: none;
   background: #c5d5c5;
   color: #222;
-  padding: 12.5px;
+  padding: 12px;
 }
 
 .nav a:hover {
