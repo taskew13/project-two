@@ -20,6 +20,9 @@ html {
   background: #e3e0cc;
   color: #222;  /* Work on Typographic Grid and look at instructions again */
 }
+#error-page body {
+  display: block;
+}
 
 @supports (display: grid) {
   html {padding: 24px 0;}
