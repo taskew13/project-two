@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
-@import url('//basehold.it/24');
+@import url('#//basehold.it/24');
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -14,9 +14,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Baseline grid: 24 px, Base font-size: 18px */
 html {
   font-family: 'Petrona', 'Hoefler Text', Georgia, 'Times New Roman', Times, Roman, serif;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 24px;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.33333333em; /* 24 / 18 = 1.33333333 */
+  padding: 1.33333333em; /* 24 / 18 = 1.33333333 */
   background: #FFFAF0;
   color: #222;  /* Work on Typographic Grid and look at instructions again */
 }
@@ -32,15 +32,15 @@ html {
   shape-outside: square();
 }
 @supports (display: grid) {
-  html {padding: 24px 0;}
+  html {padding: 1.33333333em 0;} /* 24 / 18 = 1.33333333 */
 }
 h1 {
   font-weight: 700;
-  font-size: 31.984px;
+  font-size: 1.77688889em; /* 31.984 / 18 = 1.77688889 */
 }
 h2 {
   font-weight: 600;
-  font-size: 23.994px
+  font-size: 1.333em; /* 23.994 / 18 = 1.333 */
 }
 aside {
   float: right;
@@ -64,7 +64,7 @@ aside {
 #resume h3 {
   font-weight: 600;
   list-style-type: disc;
-  padding-top: 24px;
+  padding-top: 0.66666667em; /* 12 / 18 = 0.66666667 */
 }
 body {
   display: grid;
@@ -90,19 +90,19 @@ h2,
 figcaption,
 nav,
 p {
-  padding-bottom: 24px;
+  padding-bottom: 1.33333333em; /* 24 / 18 = 1.33333333 */
 }
 
 /* Modular */
 .nav li {
-  padding-bottom: 6px;
+  padding-bottom: 0.3333333333333333em; /* 6 / 20 = 0.3 */
 }
 .nav a {
   display: block;
   text-decoration: none;
   background: #c5d5c5;
   color: #222;
-  padding: 12px;
+  padding: 0.6666666666666666em; /* 12 / 20 = 0.6 */
 }
 
 .nav a:hover {
@@ -111,7 +111,7 @@ p {
 
 /* State */
 
-@media screen and (min-width: 330px) {
+@media screen and (min-width: 20.625em) /*330 / 16 = 20.625 */ {
   .nav {
     display: flex;
   }
@@ -134,14 +134,14 @@ p {
     }
   }
 
-@media screen and (min-width: 286px) {
+@media screen and (min-width: 17.875em) /* 286 / 16 = 17.875 */ {
   .audio {
     display: flex;
     max-width: 100%;
   }
 }
   .nav a {
-    margin-right: 12px;
+    margin-right: 0.6em; /* 12 / 20 = 0.6 */
   }
   .nav li:last-child a {
     margin-right: 0;
