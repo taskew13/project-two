@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('//basehold.it/24');
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -42,16 +42,29 @@ h2 {
   font-weight: 600;
   font-size: 23.994px
 }
-ul {
-  margin-left: 12px
-  padding-bottom: 12px
-  list-style-type: armenian;
-}
 aside {
   float: right;
 }
 #education li {
   list-style-type: circle;
+}
+#experience li {
+  list-style-type: circle;
+}
+#campus li {
+  list-style-type: circle;
+}
+#skills li {
+  list-style-type: circle;
+}
+#resume h4 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+#resume h3 {
+  font-weight: 600;
+  list-style-type: disc;
+  padding-top: 24px;
 }
 body {
   display: grid;
@@ -121,6 +134,12 @@ p {
     }
   }
 
+@media screen and (min-width: 286px) {
+  .audio {
+    display: flex;
+    max-width: 100%;
+  }
+}
   .nav a {
     margin-right: 12px;
   }
