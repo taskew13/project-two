@@ -23,7 +23,13 @@ html {
 #error-page body {
   display: block;
 }
-
+#home-page img {
+  display: block;
+	max-width: 100%;
+	border: 1px solid #e3e0cc;
+  float: left;
+  shape-outside: square();
+}
 @supports (display: grid) {
   html {padding: 24px 0;}
 }
