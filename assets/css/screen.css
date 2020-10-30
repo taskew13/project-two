@@ -25,7 +25,7 @@ html {
 }
 #home-page img {
   display: block;
-	width: 200px;
+	width: 11.1111111em; /* 200 / 18 = 11.1111111 */
 	border: 1px solid #222;
   margin: 0 0.5em 0 0;
   float: left;
@@ -68,7 +68,7 @@ aside {
 }
 body {
   display: grid;
-  grid-template-columns: minmax(12px,1fr) minmax(min-content,45ch) minmax(12px,1fr)
+  grid-template-columns: minmax(0.66666667em,1fr) minmax(min-content,45ch) minmax(0.66666667em,1fr) /* 12 / 18 = 0.66666667 */
 }
 
 header,
@@ -95,14 +95,14 @@ p {
 
 /* Modular */
 .nav li {
-  padding-bottom: 0.3333333333333333em; /* 6 / 20 = 0.3 */
+  padding-bottom: 0.3333333333333333em; /* 6 / 18 = 0.33333333 */
 }
 .nav a {
   display: block;
   text-decoration: none;
   background: #c5d5c5;
   color: #222;
-  padding: 0.6666666666666666em; /* 12 / 20 = 0.6 */
+  padding: 0.6666666666666666em; /* 12 / 18 = 0.66666666 */
 }
 
 .nav a:hover {
@@ -111,7 +111,7 @@ p {
 
 /* State */
 
-@media screen and (min-width: 20.625em) /*330 / 16 = 20.625 */ {
+@media screen and (min-width: 330px) {
   .nav {
     display: flex;
   }
@@ -134,14 +134,14 @@ p {
     }
   }
 
-@media screen and (min-width: 17.875em) /* 286 / 16 = 17.875 */ {
+@media screen and (min-width: 286px) {
   .audio {
     display: flex;
     max-width: 100%;
   }
 }
   .nav a {
-    margin-right: 0.6em; /* 12 / 20 = 0.6 */
+    margin-right: 0.66666666em; /* 12 / 18 = 0.666666666 */
   }
   .nav li:last-child a {
     margin-right: 0;
