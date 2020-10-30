@@ -42,6 +42,17 @@ h2 {
   font-weight: 600;
   font-size: 23.994px
 }
+ul {
+  margin-left: 12px
+  padding-bottom: 12px
+  list-style-type: armenian;
+}
+aside {
+  float: right;
+}
+#education li {
+  list-style-type: circle;
+}
 body {
   display: grid;
   grid-template-columns: minmax(12px,1fr) minmax(min-content,45ch) minmax(12px,1fr)
