@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
-@import url('#//basehold.it/24');
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+@import url("#//basehold.it/24");
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -13,7 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Baseline grid: 24 px, Base font-size: 18px */
 html {
-  font-family: 'Petrona', 'Hoefler Text', Georgia, 'Times New Roman', Times, Roman, serif;
+  font-family: "Petrona", "Hoefler Text", Georgia, "Times New Roman", Times, Roman, serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.33333333em; /* 24 / 18 = 1.33333333 */
   padding: 1.33333333em; /* 24 / 18 = 1.33333333 */
@@ -25,14 +25,15 @@ html {
 }
 #home-page img {
   display: block;
-	width: 11.1111111em; /* 200 / 18 = 11.1111111 */
-	border: 1px solid #222;
+  width: 11.1111111em;  /* 200 / 18 = 11.1111111 */
   margin: 0 0.5em 0 0;
   float: left;
   shape-outside: square();
 }
 @supports (display: grid) {
-  html {padding: 1.33333333em 0;} /* 24 / 18 = 1.33333333 */
+  html {
+    padding: 1.33333333em 0;
+  }  /* 24 / 18 = 1.33333333 */
 }
 h1 {
   font-weight: 700;
@@ -66,7 +67,7 @@ aside {
   list-style-type: disc;
   padding-top: 0.66666667em; /* 12 / 18 = 0.66666667 */
 }
-body {
+.body {
   display: grid;
   grid-template-columns: minmax(0.66666667em,1fr) minmax(min-content,45ch) minmax(0.66666667em,1fr) /* 12 / 18 = 0.66666667 */
 }
@@ -79,11 +80,11 @@ section {
   grid-column: 2 / 3;
 }
 
-img {
-	display: block;
-	max-width: 100%;
-	border: 1px solid #e3e0cc;
-  box-sizing: border-box;
+  .img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #e3e0cc;
+    box-sizing: border-box;
 }
 h1,
 h2,
@@ -104,7 +105,6 @@ p {
   color: #222;
   padding: 0.6666666666666666em; /* 12 / 18 = 0.66666666 */
 }
-
 .nav a:hover {
   background: #9fa9a3;
 }
@@ -127,17 +127,15 @@ p {
     width: 33.3333333333%;
     flex: 1 1 auto;
   }
-
   @supports (display: flex) {
     .nav li {
       width: auto;
     }
   }
-
 @media screen and (min-width: 286px) {
   .audio {
     display: flex;
-    max-width: 100%;
+    max-width: 50%;
   }
 }
   .nav a {
