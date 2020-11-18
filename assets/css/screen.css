@@ -82,11 +82,11 @@ section {
   grid-column: 2 / 3;
 }
 
-  .img {
-    display: block;
-    max-width: 100%;
-    border: 1px solid #e3e0cc;
-    box-sizing: border-box;
+img {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #e3e0cc;
+  box-sizing: border-box;
 }
 h1,
 h2,
