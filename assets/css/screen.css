@@ -24,8 +24,9 @@ html {
   display: block;
 }
 #home-page img {
+  position: relative;
   display: block;
-  width: 11.1111111em;  /* 200 / 18 = 11.1111111 */
+  width: 13.8888888em;  /* 250 / 18 = 13.8888888 */
   margin: 0 0.5em 0 0;
   float: left;
   shape-outside: square();
@@ -43,28 +44,27 @@ h2 {
   font-weight: 600;
   font-size: 1.333em; /* 23.994 / 18 = 1.333 */
 }
-aside {
-  float: right;
-}
-#education li {
+#education ul li {
   list-style-type: circle;
 }
-#experience li {
+#experience ul li {
   list-style-type: circle;
 }
-#campus li {
+#campus ul li {
   list-style-type: circle;
 }
-#skills li {
+#skills ul li {
   list-style-type: circle;
 }
 #resume h4 {
   font-weight: 500;
+  border-bottom: 2px solid #c5d5c5;
 }
 #resume h3 {
   font-weight: 600;
   list-style-type: disc;
   padding-top: 0.66666667em; /* 12 / 18 = 0.66666667 */
+  padding-bottom: 6px;
 }
 #error-page figcaption {
   position: absolute;
@@ -72,9 +72,19 @@ aside {
   color: #FFFAF0;
   background-color: #FFFAF0;
 }
+#home-page figcaption {
+  position: absolute;
+  color: #DDD;
+  bottom: inherit;
+  background-color: rgba(0,0,0,0.6);
+}
 body {
   display: grid;
-  grid-template-columns: minmax(0.66666667em,1fr) minmax(min-content,45ch) minmax(0.66666667em,1fr) /* 12 / 18 = 0.66666667 */
+  grid-template-columns: repeat(5, 20%)
+}
+#resume aside {
+  float: right;
+  padding-left: 6px;
 }
 figcaption {
   font-size: 0.75em;
@@ -84,7 +94,7 @@ footer,
 main,
 nav,
 section {
-  grid-column: 2 / 3;
+  grid-column: 2 / 5;
 }
 
 img {
