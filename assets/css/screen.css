@@ -53,7 +53,7 @@ h2 {
 #campus ul li {
   list-style-type: circle;
 }
-#skills ul li {
+#skills li {
   list-style-type: circle;
 }
 #resume h4 {
@@ -113,6 +113,9 @@ p {
 audio {
   display: block;
   max-width: 100%;
+}
+footer {
+  padding-top: 18px;
 }
 /* Modular */
 .nav li {
