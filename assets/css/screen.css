@@ -60,12 +60,17 @@ aside {
 }
 #resume h4 {
   font-weight: 500;
-  text-decoration: underline;
 }
 #resume h3 {
   font-weight: 600;
   list-style-type: disc;
   padding-top: 0.66666667em; /* 12 / 18 = 0.66666667 */
+}
+#error-page figcaption {
+  position: absolute;
+  bottom: 0;
+  color: #FFFAF0;
+  background-color: #FFFAF0;
 }
 body {
   display: grid;
@@ -95,7 +100,10 @@ nav,
 p {
   padding-bottom: 1.33333333em; /* 24 / 18 = 1.33333333 */
 }
-
+audio {
+  display: block;
+  max-width: 100%;
+}
 /* Modular */
 .nav li {
   padding-bottom: 0.3333333333333333em; /* 6 / 18 = 0.33333333 */
