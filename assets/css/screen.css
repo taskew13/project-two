@@ -26,7 +26,7 @@ html {
 #home-page img {
   position: relative;
   display: block;
-  width: 13.8888888em;  /* 250 / 18 = 13.8888888 */
+  width: 19.4444444em;  /* 350 / 18 = 19.4444444 */
   margin: 0 0.5em 0 0;
   float: left;
   shape-outside: square();
@@ -35,6 +35,12 @@ html {
   html {
     padding: 1.33333333em 0;
   }  /* 24 / 18 = 1.33333333 */
+}
+#music-page img {
+  position: relative;
+  display: block;
+  width: 13.8888888em;  /* 250 / 18 = 13.8888888 */
+  margin: 0 0.5em 0 0;
 }
 h1 {
   font-weight: 700;
@@ -88,6 +94,9 @@ body {
 }
 figcaption {
   font-size: 0.75em;
+}
+#music {
+  grid-column: 1 / 6;
 }
 header,
 footer,
